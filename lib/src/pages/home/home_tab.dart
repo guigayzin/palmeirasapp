@@ -3,6 +3,7 @@ import 'package:palmeirasapp/src/config/custom_colors.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:palmeirasapp/src/pages/home/components/category_tile.dart';
 import 'package:palmeirasapp/src/config/app_data.dart' as appData;
+import 'package:palmeirasapp/src/pages/home/components/item_tile.dart';
 
 class HomeTab extends StatefulWidget {
   const HomeTab({super.key});
@@ -108,10 +109,27 @@ class _HomeTabState extends State<HomeTab> {
                 separatorBuilder: (_, index) => const SizedBox(width: 10),
                 itemCount: appData.categories.length),
           ),
+          //Grid
+          Expanded(
+            child: GridView.builder(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+              physics: const BouncingScrollPhysics(),
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                mainAxisSpacing: 10,
+                crossAxisSpacing: 10,
+                childAspectRatio: 9 / 11.5,
+              ),
+              itemCount: appData.items.length,
+              itemBuilder: (_, index) {
+                return ItemTile(
+                  item: appData.items[index],
+                );
+              },
+            ),
+          ),
         ],
       ),
-
-      //Grid
     );
   }
 }
