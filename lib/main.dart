@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:palmeirasapp/src/auth/sign_in_screen.dart';
+import 'package:palmeirasapp/src/pages/auth/sign_in_screen.dart';
 import 'package:palmeirasapp/src/config/custom_colors.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
           primarySwatch: customColors.customSwatchColor,
-          scaffoldBackgroundColor: Colors.white60),
+          scaffoldBackgroundColor: Colors.white70),
       home: const SignInScreen(),
       debugShowCheckedModeBanner: false,
     );

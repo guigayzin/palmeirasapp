@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:palmeirasapp/src/config/custom_colors.dart';
-import 'package:palmeirasapp/src/home/home_tab.dart';
+import 'package:palmeirasapp/src/pages/home/home_tab.dart';
 
 class BaseScreen extends StatefulWidget {
   const BaseScreen({super.key});
@@ -10,7 +10,7 @@ class BaseScreen extends StatefulWidget {
 }
 
 class _BaseScreenState extends State<BaseScreen> {
-  int currentIndex = 1;
+  int currentIndex = 0;
   final pageController = PageController();
 
   @override
@@ -23,7 +23,7 @@ class _BaseScreenState extends State<BaseScreen> {
           const HomeTab(),
           Container(color: customColors.customSwatchColor.shade100),
           Container(color: customColors.customSwatchColor.shade500),
-          Container(color: customColors.customSwatchColor.shade900),
+          Container(color: customColors.customSwatchColor.shade300),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(

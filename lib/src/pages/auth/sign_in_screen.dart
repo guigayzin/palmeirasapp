@@ -1,7 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:palmeirasapp/src/auth/sign_up_screen.dart';
-import 'package:palmeirasapp/src/base/base_screen.dart';
+import 'package:palmeirasapp/src/pages/auth/sign_up_screen.dart';
+import 'package:palmeirasapp/src/pages/base/base_screen.dart';
 import 'package:palmeirasapp/src/components/custom_text_fild.dart';
 import 'package:palmeirasapp/src/config/custom_colors.dart';
 

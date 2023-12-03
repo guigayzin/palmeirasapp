@@ -14,7 +14,6 @@ class SignUpScreen extends StatelessWidget {
     mask: '(**) * ****-****',
     filter: {'*': RegExp(r'[0-9]')},
   );
-
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
